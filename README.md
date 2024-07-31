@@ -5,13 +5,13 @@ Nano URL es una aplicación web que te permite convertir URLs largas en versione
 
 ## Características principales
 - Convierte URLs largas en versiones cortas y legibles.
-- Genera estadísticas de uso para cada enlace acortado.
 - Personalización de enlaces cortos para una fácil identificación.
 - Interfaz de usuario intuitiva y fácil de usar.
-- Integración con servicios de terceros para compartir enlaces de manera rápida y sencilla.
+- Integración con servicios de terceros para compartir enlaces de manera rápida y sencilla. 🔜
+- Genera estadísticas de uso para cada enlace acortado. 🔜
 
 ## Tecnologías utilizadas
-- **Frontend:** React, Tailwind CSS.
+- **Frontend:** React, CSS Modules.
 - **Backend:** NestJS.
 - **Base de datos:** 🔜.
 - **Herramientas adicionales:** Git para control de versiones, GitHub para alojamiento de código.
