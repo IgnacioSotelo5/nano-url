@@ -1,0 +1,123 @@
+.title{
+    min-width: fit-content;
+    padding-top: 40px;
+}
+
+.title svg{
+    width: 100%;
+    height: 2rem;
+}
+
+.title.closed svg{
+  height: 3rem;
+}
+
+.container{
+    position: relative;
+    width: 15rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all 200ms;
+  }
+
+.container.closed{
+  width: 6.2rem;
+}
+
+.separator{
+    width: 95%;
+    margin-top: 1rem;
+}
+
+.content{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content.closed{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 1rem;
+}
+
+
+.listContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  cursor: pointer;
+}
+
+.listContainer.closed > .listItem > p{
+  display: none;
+}
+
+.listContainer > a{
+  width: 100%;
+  text-decoration: none;
+  color: #273144;
+}
+
+.listContainer.closed > a >li > p{
+  display: none;
+  
+}
+
+.userItem{
+  box-sizing: border-box;
+  width: 100%;
+  height: 3rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.userItem.closed{
+  justify-content: center;
+}
+
+.userItem.closed > img{
+  justify-content: center;
+}
+
+.userItem.closed span{
+  display: none;
+}
+
+.userItem.closed svg{
+  display: none;
+}
+
+  .userItem span{
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .userItem svg{
+    position: relative;
+    left: 1rem;
+    padding-top: 2px;
+  }
+
+  @media (max-width: 768px) {
+      .container{
+        display: none;  
+      }
+  }

@@ -1,0 +1,68 @@
+.checkboxInput {
+    display: none;
+}
+
+.checkboxStyle {
+    align-self: self-start;
+    cursor: pointer;
+    padding: 1.75px;
+    width: 2.75rem;
+    height: 1.25rem;
+    border-radius: 1rem;
+    background-color: hsla(260, 25%, 73%, .5);
+    position: relative;
+    left: 5rem;
+    transition: background-color 0.3s;
+    display: flex;
+    outline: 1px solid hsla(260, 25%, 23%, .8);
+    outline-offset: 1px;
+}
+
+.checkboxSpan::after {
+    content: '';
+    width: 1.25rem;
+    border-radius: 999px;
+    color: #fff;
+    height: 1.25rem;
+    position: absolute;
+    top: 1.25px;
+    left: 1.5px;
+    background-color: #fefefeff;
+    z-index: 10;
+    transition: left 0.3s;
+}
+
+.checkboxInput:checked + .checkboxSpan::after {
+    left: calc(100% - 1.25rem - 1px); /* Ajusta la posición del círculo al estar marcado */
+    top: 1.25px;
+}
+
+.icons{
+    position: absolute;
+    left: -1.75rem;
+    width: 6.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons svg{
+    width: 1.25rem;
+    height: 1.25rem;
+    opacity: .9;
+}
+
+.icons svg:first-child{
+    color: #FFF;
+}
+
+.icons svg:last-child{
+    color: hsla(260, 5%, 73%, 1);
+}
+
+.checkboxInput:checked + .checkboxSpan + .icons svg:last-child{
+    color: #FFA500;
+}
+
+.checkboxInput:checked + .checkboxSpan + .icons svg:first-child{
+    color: #333333;
+}
