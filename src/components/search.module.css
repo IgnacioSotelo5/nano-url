@@ -1,0 +1,41 @@
+.inputField{
+    position: relative;
+    left: 75%;
+    top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    cursor: pointer;
+    width: fit-content;
+    z-index: 10;
+}
+
+.inputField label{
+    display: flex;
+    align-items: center;
+}
+
+
+input:focus{
+    outline: none;
+    border: none;
+}
+
+.input{
+    border-radius: 1rem;
+    padding: .75rem;
+    padding-left: 2.75rem;
+    border: none;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.searchIcon{
+    position: absolute;
+    padding: 12px;
+    cursor: pointer;
+    
+}
+
+.submit{
+    visibility: hidden;
+}

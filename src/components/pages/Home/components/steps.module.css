@@ -1,0 +1,35 @@
+.listItem{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.checkField{
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 100%;
+}
+
+.checkField.completed{
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwNTk2NjkiIGQ9Im0xMC42IDE2LjZsNy4wNS03LjA1bC0xLjQtMS40bC01LjY1IDUuNjVsLTIuODUtMi44NWwtMS40IDEuNHpNMTIgMjJxLTIuMDc1IDAtMy45LS43ODh0LTMuMTc1LTIuMTM3VDIuNzg4IDE1LjlUMiAxMnQuNzg4LTMuOXQyLjEzNy0zLjE3NVQ4LjEgMi43ODhUMTIgMnQzLjkuNzg4dDMuMTc1IDIuMTM3VDIxLjIxMyA4LjFUMjIgMTJ0LS43ODggMy45dC0yLjEzNyAzLjE3NXQtMy4xNzUgMi4xMzhUMTIgMjIiLz48L3N2Zz4=);
+    border: none;
+    background-size: 1.75rem;
+    background-position: center;
+    background-origin: border-box;
+}
+
+.titleContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+.buttonContainer{
+    display: flex;
+    gap: .5rem;
+}
+
+.title{
+    font-weight: 500;
+}

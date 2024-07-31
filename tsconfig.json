@@ -1,25 +1,32 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
+    "target": "ESNext",
+    "module": "ESNext", // Usar "ESNext" en lugar de "esnext" para mantener consistencia
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Combinar las librerías necesarias
     "jsx": "react-jsx",
-
-    /* Linting */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noEmit": true,
+    "isolatedModules": true,
+    "moduleResolution": "Bundler", // Usar "bundler" en lugar de "node" para mantener consistencia
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true, // Nueva opción de "tsconfig.json" 2
+    "baseUrl": ".", // Nueva opción de "tsconfig.json" 2
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "@/*": ["./src/*"]
+    },
+    "allowImportingTsExtensions": true, // Nueva opción de "tsconfig.json" 2
+    "noUnusedLocals": true, // Nueva opción de "tsconfig.json" 2
+    "noUnusedParameters": true, // Nueva opción de "tsconfig.json" 2
+    "noFallthroughCasesInSwitch": true // Nueva opción de "tsconfig.json" 2
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "eslint.config.js"], // Mantener las inclusiones necesarias
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }

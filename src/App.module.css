@@ -1,0 +1,37 @@
+.container{
+    background-color: #F4F6FA;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    flex-grow: 1;
+    position: relative;
+    margin: 1rem;
+}
+
+
+.logout{
+    min-width: fit-content;
+    height: 2rem;
+    background-color: hsla(260, 5%, 26%, 1);
+    position: absolute;
+    bottom: 0;
+    color: #f0f0f0;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+.loginContainer{
+    margin: 1rem;
+    padding: 1rem;
+}
