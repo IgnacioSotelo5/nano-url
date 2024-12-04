@@ -1,0 +1,109 @@
+.qrContainer{
+    height: 100svh;
+    padding: 1.33rem;
+    flex-direction: column;
+    overflow: scroll;
+    scrollbar-width: none;
+    position: absolute;
+    right: -1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    top: 4.5rem;
+    overflow: hidden;
+}
+
+.qrWrapper{
+    composes: createLinkWrapper from '@/pages/Links/create-link-page.module.css';
+    left: 1rem;
+    border-top: 1px solid #89929922;
+    height: calc(100svh - 6.5rem);
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.previewWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100svh - 6.5rem);
+    width: 45%;
+    position: absolute;
+    right: 0;
+    flex-grow: 1;
+    background-color: hsla(260, 10%, 70%, .1);
+}
+
+.previewWrapper h2{
+    position: absolute;
+    top: 1rem;
+}
+
+.form{
+    composes: form from '@/pages/Links/create-link-page.module.css';
+    max-width: 40rem;
+    height: 100svh;
+}
+
+.input{
+    height: 3rem;
+    composes: input from '@/pages/Links/create-link-page.module.css'
+}
+
+.title{
+    composes: pageTitle from '@/pages/Links/create-link-page.module.css';
+    left: 0;
+    margin-bottom: 1rem;
+}
+
+.separator{
+    width: 100%;
+    border: none;
+    height: 2px;
+    border-radius: 1rem;
+    background-color: #1f1f1f21;
+    margin-bottom: 1rem;
+}
+
+p{
+    font-weight: 400;
+    letter-spacing: -.039rem;
+}
+
+.customField{
+    composes: customField from '@/pages/Links/create-link-page.module.css';
+}
+
+.domainDisabled{
+    composes: domainDisabled from '@/pages/Links/create-link-page.module.css';
+}
+
+.primaryButton{
+    composes: primaryButton from '@/components/button.module.css';
+    width: fit-content;
+    padding: .75rem;
+    cursor: pointer;
+    font-size: inherit;
+    border-radius: 4px;
+}
+
+.cancelButton{
+    border-radius: 4px;
+    margin-top: 0;
+    composes: cancelButton from '@/components/button.module.css';
+}
+
+.formFooter{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    background: #0f0f0f;
+    z-index: 100;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 83%;
+}

@@ -1,0 +1,139 @@
+.registerContainer{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.inputContainer{
+    display: flex;
+    gap: .75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.formTitle{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.formTitle h2{
+    font-size: 2rem;
+}
+
+.inputContainer > label{
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: -.026rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+
+.input{
+    border: .0625rem solid #aaa;
+    border-radius: .25rem;
+    padding: .825rem .75rem;
+}
+
+
+.submitButton{
+    border: none;
+    padding: .725rem .75rem;
+    border-radius: .25rem;
+    font-weight: 500;
+    composes: primaryButton from '@/components/button.module.css';
+    margin: 0;
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    grid-area: main;
+    margin: 0px auto;
+    max-width: 30rem;
+}
+
+.sidePanel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: sidePanel;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    grid-area: header;
+}
+
+.logo{
+    max-width: 10rem;
+    position: relative;
+    right: 10rem;
+}
+
+.anchor{
+    color:#1b4dcc;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.showPassIcon{
+    position: relative;
+    left: 92%;
+    bottom: 39%    
+}
+
+.showPassIcon > svg{
+    width: 1.225rem;
+}
+
+@media (min-width: 1024px) {
+    .registerContainer{
+        grid-template-columns: 60% 40%;
+        grid-template-areas:
+        "header sidePanel"
+        "main sidePanel" ;
+    }
+
+    .registerForm{
+        position: relative;
+        top: 5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .registerContainer{
+        grid-template-areas: 
+        "header"
+        "main";
+    }
+    .sidePanel{
+        display: none;
+    }
+
+    .header{
+        padding: 2.125rem 1.5rem 0.875rem;
+      }
+    
+      .logo{
+        right: 6rem;
+      }
+}

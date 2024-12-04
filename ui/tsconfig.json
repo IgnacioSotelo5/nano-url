@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext", // Usar "ESNext" en lugar de "esnext" para mantener consistencia
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Combinar las librerías necesarias
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "moduleResolution": "Bundler", // Usar "bundler" en lugar de "node" para mantener consistencia
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true, // Nueva opción de "tsconfig.json" 2
+    "baseUrl": ".", // Nueva opción de "tsconfig.json" 2
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "@/*": ["./src/*"]
+    },
+    "allowImportingTsExtensions": true, // Nueva opción de "tsconfig.json" 2
+    "noUnusedLocals": true, // Nueva opción de "tsconfig.json" 2
+    "noUnusedParameters": true, // Nueva opción de "tsconfig.json" 2
+    "noFallthroughCasesInSwitch": true // Nueva opción de "tsconfig.json" 2
+  },
+  "include": ["src", ".eslintrc.json"], // Mantener las inclusiones necesarias
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+.toastError{
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2; /* Limitar a 2 líneas */
+  line-height: 1.2; /* Ajusta según sea necesario */
+  max-height: 2.4em; /* 2 líneas * 1.2 line-height */
+}

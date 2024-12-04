@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Redirigiendo...</title>
+  </head>
+  <body>
+    <h1>Estás siendo redirigido...</h1>
+    <p>Serás redirigido a <strong>{{title}}</strong> en breve.</p>
+    <p>Si no eres redirigido automáticamente, haz clic <a href="{{originalUrl}}">aquí</a>.</p>
+    
+    <script>
+      // Redirige después de 3 segundos
+      setTimeout(function() {
+        window.location.href = "{{originalUrl}}";
+      }, 3000);
+    </script>
+  </body>
+</html>

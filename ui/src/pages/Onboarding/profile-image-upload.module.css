@@ -1,0 +1,153 @@
+.uploadContainer{
+    align-self: center;
+    width: 50%;
+    height: 30rem;
+    border: 1px solid #0f0f0f55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 2rem 0;
+}
+
+.uploadForm{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 18rem;
+    width: 100%;
+    padding-left: 1.5;
+}
+
+.label{
+    margin: .5rem;
+    padding: 1rem 2.25rem;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    bottom: 1.5rem;
+}
+
+
+.labelContent > svg{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.labelContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+    margin: .25rem 0;
+    font-weight: bold;
+    text-wrap: nowrap;
+}
+
+.formTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0rem 0.5rem 2rem 5rem;
+}
+
+.formats{
+    font-weight: 400;
+    font-size: small;
+    opacity: .8;
+    letter-spacing: -.036rem;
+    text-wrap: pretty;
+    width: 88%;
+}
+
+.optionsButton{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap:.5rem;
+    padding: 0.5rem 2rem;
+    padding-right: 6rem;
+}
+
+.submitButton{
+    padding: .5rem .75rem;
+    border-radius: 4px;
+    width: auto;
+    margin: 0;
+    composes: button from '@/components/button.module.css'
+}
+
+.submitButton:hover{
+    background-color: #2e31fb;
+    color: #fff;
+}
+
+
+.cancelButton{
+    composes: submitButton;
+    background-color: #D4D4D4;
+    color: #0a0a0a;
+    font-weight: lighter;
+}
+
+.cancelButton:hover{
+    background-color: #FF6B6B;
+    color: #fff;
+}
+
+.imgPreview{
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+@media (max-width: 920px) {
+    .uploadContainer{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .uploadContainer{
+        width: 80%;
+    }
+    .label{
+        width: 75%;
+    }
+    .labelContent > p{
+        text-align: center;
+        text-wrap:balance;
+    }
+}
+
+.hr:nth-child(2){
+    width: 100%;
+    position: relative;
+    bottom: 1.75rem;
+}
+
+.hr:nth-child(4){
+    width: 100%;
+    position: relative;
+    top: .75rem;
+}
+
+.error{
+    color: red;
+}

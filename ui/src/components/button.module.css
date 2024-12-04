@@ -1,0 +1,224 @@
+.primaryButton{
+    background-color: hsla(260, 100%, 50%, 1);
+    color: #fff;
+    padding: .9rem;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.primaryButton:hover{
+    background-color: #651AFA;
+}
+
+.primaryButton.closed{
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 0;
+
+}
+
+.primaryButtonDark{
+    background-color: #6F01EC;
+}
+
+.cancelButton{
+    background-color: hsla(260, 0%, 94%, 1);
+    color: #000;
+    padding: .75rem;
+    border: none;
+    border-radius: 8px;
+    width: fit-content;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    outline: 1px solid hsla(0, 0%, 50%, 0.2);
+    transition: background-color 0.3s;
+}
+
+.cancelButton:hover{
+    background-color: hsla(260, 0%, 84%, 1);
+}
+
+.openButton{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    padding: .35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #f0f0f0;
+    transition: all 200ms;
+    color:  #5200F5;
+    position: fixed;
+    top: 11rem;
+    left: 5.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.openButton[data-status='true']{
+    left: 14rem;
+    top: 11rem;
+}
+
+
+.openButton svg{
+    transition: all 200ms;
+    width: 1.25rem;
+    height: 1.25rem;
+    transform: rotate(180deg);
+}
+
+.openButton:hover{
+    background-color: #651AFA;
+    color: #fff;
+}
+
+.openButton[data-status='false'] svg{
+    transform: rotate(0deg);
+}
+
+.mobileMenuButton{
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+    border-radius: .25rem;
+    align-content: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 105;
+    top: .5rem;
+}
+
+
+.mobileMenuButton span{
+    display: block;
+    width: 1.5rem;
+    height: 4px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    background-color: #5200F5;
+    transition: all 100ms;
+}
+
+.mobileMenuButton.open span:nth-child(1) {
+    background-color: #5200F5;
+    transform:  rotate(45deg) translateY(4px) translateX(4px);
+}
+
+
+.mobileMenuButton.open span:nth-child(3) {
+    background-color: #5200F5;
+    transform: rotate(-45deg) translateY(-2px) translateX(1.5px);
+}
+
+.mobileMenuButton.open span:nth-child(2){
+    display: none;
+}
+
+.mobileMenuButton:focus{
+    border: none;
+    outline: none;
+}
+
+.button {
+    /* Estilos por defecto para el botón */
+    padding: .45rem;
+    border-radius: .25rem;
+    border: none;
+    background-color: #5200F5;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 300ms;
+    font-weight: 600;
+  }
+
+  .button:hover{
+    background-color: #7733FF;
+  }
+
+  .darkButton{
+    composes: button;
+    background-color: #6F01EC;
+  }
+
+  .darkButton:hover{
+    background-color: #785FDC;
+  }
+
+  .cardButton{
+    composes: darkButton;
+    padding: .5rem;
+  }
+
+  @media (min-width: 768px){
+   .mobileMenuButton{
+    display: none;
+   } 
+  }
+
+  @media (width <= 320px) {
+    .mobileMenuButton{
+        left: 1rem;
+    }
+
+    .openButton{
+        display: none;
+    }
+  }
+
+  .homeButton{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    padding: .5rem;
+    font-weight: 600;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    border: 1px solid hsla(260, 100%, 60%, 1);
+    background-color: transparent;
+    color: hsla(260, 96%, 54%, 1);
+    text-decoration: none;
+}
+
+.homeButton:hover{
+    border: 1px solid transparent;
+    background-color: hsla(260, 96%, 54%, 1);
+    color: hsla(260, 10%, 100%, 1);    
+}
+
+.homeButton:focus{
+    border: 1px solid transparent;
+    background-color: hsla(260, 100%, 60%, 1);
+    color: hsla(260, 10%, 100%, 1);    
+}
+
+.pricingButton{
+    padding: .5rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    border: 1px solid hsla(260, 100%, 60%, 1);
+    background-color: hsla(260, 96%, 54%, 1);
+    color: hsla(260, 50%, 100%, 1);
+}
+
+.pricingButton:hover{
+    background-color: hsla(238, 93%, 62%, 1);
+}

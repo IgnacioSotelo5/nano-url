@@ -1,0 +1,152 @@
+.title{
+  min-height: 52.8px;
+  min-width: fit-content;
+}
+
+.title svg{
+    width: 100%;
+    height: 2rem;
+}
+
+.title.closed svg{
+  height: 3rem;
+}
+
+.container{
+    position: relative;
+    width: 15rem;
+    flex-shrink: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all 300ms;
+  }
+
+.container.closed{
+  width: 6.2rem;
+  height: 100%;
+}
+
+.separator{
+    width: 95%;
+    margin-top: 1rem;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  transition: all 300ms ease-in-out ;
+  padding-top: 40px;
+}
+
+.content.open{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.listContainer{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.listContainer.open{
+  width: 100%;
+}
+
+.listContainer.open > .listItem > p{
+  display: none;
+}
+
+.listContainer > a{
+  width: 100%;
+  text-decoration: none;
+  color: #273144;
+}
+
+.listContainer.closed > a >li > p{
+  display: none;
+}
+
+.userItem{
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: .5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.userItem span{
+  flex-grow: 1;
+}
+
+.userItem svg{
+  flex-basis: 2.75rem;
+}
+
+.userItem.closed{
+  justify-content: center;
+}
+
+.userItem.closed > img{
+  justify-content: center;
+}
+
+.userItem.closed span{
+  display: none;
+}
+
+.userItem.closed svg{
+  display: none;
+}
+
+  .userItem span{
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .userItem svg{
+    position: relative;
+    left: 1rem;
+    padding-top: 2px;
+  }
+
+  @media (width <= 320px) {
+      .container{
+        display: none;
+      }
+
+      .container.open{
+        display: flex;
+        width: 100%;
+        position:absolute;
+        z-index: 100;
+        background-color: #000;
+      }
+
+      .openButton{
+        display: none;
+      }      
+  }

@@ -1,0 +1,22 @@
+.tooltipContainer{
+    position:  relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    margin-bottom: .25rem;
+}
+
+.tooltipText{
+    position: absolute;
+    top: calc(-100% - 95px);
+    transform: translateX(-50%);
+    background-color: hsla(250, 0%, 40%, 1);
+    color: #fff;
+    z-index: 1;
+    min-width: 300px;
+    line-clamp: 2;
+    text-overflow: ellipsis;
+    padding: .75rem;
+    width: 100%;
+    border-radius: 4px;
+}

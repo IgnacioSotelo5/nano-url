@@ -1,0 +1,38 @@
+.dropdown{
+    border: 1px solid hsla(0, 0%, 50%, 0.2);
+    position: absolute;
+    top: 1rem;
+    left: 14rem;
+    width: 10rem;
+    height: fit-content;
+    border-radius: 1rem;
+    padding: .5rem;
+    box-shadow: 0px 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    z-index: 20;
+    transition: all 300ms;
+  }
+
+  .dropdown > a{
+    text-decoration: none;
+    color: #0f0f0f;
+    font-weight: 400;
+  }
+
+  .dropdownClose{
+    display: none;
+  }
+
+  .dropdownOpen{
+    display: block;
+  }
+  .dropdown.closed{
+    left: 5rem;
+    top: 1rem;
+  }
+
+  .dropdownItem{
+    composes: listItem from '../SideBarItem.module.css';
+    cursor: pointer;
+  }
+
+  

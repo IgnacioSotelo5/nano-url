@@ -1,0 +1,171 @@
+:root {
+    --background-color-light: #fff;
+    --text-color-light: #000;
+    --background-color-dark: #1f1f1fae;
+    --text-color-dark: #fff;
+    --text-color-darkLight: #ffffffef;
+  }
+
+  .container{
+    background-color: #0f0f0f;
+    color: var(--text-color-dark);
+  }
+  
+  .light {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    box-shadow: 0px 10px 60px #e2ecf992;
+  }
+  
+  .dark {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+    box-shadow: none;
+  }
+  
+  .darkLight{
+    background-color: var(--background-color-dark);
+    color: var(--text-color-darkLight);
+    box-shadow: none;
+  }
+
+  .darkLabel{
+    font-weight: 500;
+    line-height: .95rem;
+    letter-spacing: -.013rem;
+    color: var(--text-color-darkLight);
+  }
+
+  .inputDark{
+    background-color: #1f1f1f;
+    box-shadow: hsla(260, 70%, 80%, 0.8);
+    color: #fff;
+    border: .0650rem solid #aaa;
+  }
+
+  .inputDark::placeholder{
+    color: hsla(260, 0%, 90%, .7);
+  }
+
+  .inputDark:hover{
+    border: .0999rem solid #fff;
+  }
+  
+  .inputDark:focus {
+    outline: none;
+    border: 1px solid #5200F5;
+  }
+
+  .inputLight{
+    color: hsla(260, 0%, 20%, .9);
+    outline: 1px solid hsla(260, 25%, 0%, .2);
+  }
+
+  .inputLight:focus{
+    border: 0.065rem solid #8A80FF;
+  }
+
+  .inputLight::placeholder{
+    color: hsla(260, 0%, 20%, .6);
+  }
+
+  .separatorDark{
+    border: .05rem solid #d4d9e32f;
+  }
+
+  .separatorLight{
+    border: .05rem solid #d4d9e3;
+  }
+
+  .listItemDark{
+    color: var(--text-color-dark);
+  }
+
+  .listItemDark:hover{
+    background-color: #E5ECF40f;
+  }
+
+  .listItemLight:hover{
+    background-color: #F4F6FA;
+  }
+
+  .userItemDark{
+    color: var(--text-color-dark);
+  }
+
+  .userItemDark:hover{
+    background-color: #E5ECF40f;
+  }
+
+  .userItemLight:hover{
+    background-color: #E5ECF4;
+  }
+
+  .checkFieldDark{
+    border: 1px dashed #fff;
+  }
+
+  .checkFieldLight{
+    border: 1px dashed #000;
+  }
+
+  .darkContainerSidebar{
+    border-right: 1px solid #d4d9e32f;
+  }
+
+  .lightContainerSidebar{
+    border-right: 1px solid #d4d9e3;
+  }
+
+  .formFooterLight{
+    background-color: #F4F6FA;
+  }
+
+  .formFooterDark{
+    background-color: #0f0f0f
+  }
+
+  .darkQRPreview{
+    transition: all .3s;
+    outline-offset: 0px;
+    outline: 8px solid hsla(260, 0%, 60%, .6);
+  }
+  .lightQRPreview{
+    transition: all .3s;
+    outline-offset: 0px;
+    outline: 8px solid hsla(260, 0%, 20%, .6);
+  }
+
+  .lightParagraph{
+    color: hsla(260, 0%, 13%, .7);
+  }
+
+  .lightDropdown{
+    background-color: var(--background-color-light);
+  }
+
+  .lightDropdownItem:hover{
+    background-color: #E5ECF4;
+  }
+
+  .darkDropdown{
+    background-color: #1f1f1f;
+    color: var(--text-color-dark);
+  }
+
+  .darkDropdownItem{
+    color: var(--text-color-dark);
+  }
+
+  .darkDropdownItem:hover{
+    background-color: hsla(260, 0%, 20%, .6);
+  }
+
+  .cardImgDark{
+    background: transparent;
+    border: 1px solid #8A80FF;
+  }
+
+  .cardImgDark > svg{
+    color: #8A80FF;
+  }

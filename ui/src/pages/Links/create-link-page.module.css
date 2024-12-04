@@ -1,0 +1,186 @@
+.linksContainer{
+    width: auto;
+    height: 100svh;
+    padding: 1.33rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    scrollbar-width: none;
+    position: absolute;
+    right: -1rem;
+    top: 2rem;
+    transition: background-color 0.3s, color 0.3s;    width: 100%;
+    display: flex;
+    align-items: center;
+    top: 4.5rem;
+}
+.pageTitle{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -37%;
+    top: -1.5rem;
+}
+
+.createLinkWrapper{
+    position: absolute;
+    height: 100svh;
+    max-width: 75%;
+    padding: 2rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50rem;
+    height: calc(100% + 8rem);
+    gap: 1.5rem;
+}
+
+.input{
+    width: 100%;
+    height: 3rem;
+    padding: 6px 6px;
+    border-radius: .25rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.input:focus{
+    outline: 2px solid hsla(260, 75%, 75%, .4);   
+}
+
+.input:focus-visible{
+    outline-offset: 0px;
+    border: 1px solid hsla(260, 100%, 75%, 1);
+}
+
+.input::placeholder{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.checkboxTitle{
+    font-weight: 500;
+    width: 100%;
+    line-height: .95rem;
+    letter-spacing: -.013rem;
+}
+
+.form > label{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-weight: 500;
+    width: 100%;
+    line-height: .95rem;
+    letter-spacing: -.013rem;
+    color: hsla(260, 0%, 20%, .9);
+    height: auto;
+}
+
+.formTitle{
+    composes: pageTitle;
+    left: 0;
+    top: -1rem;
+    font-weight: 900;
+    margin-bottom: 1.75rem;
+    font-size: 2rem;
+
+}
+
+.separator{ 
+    margin-top: 2rem;
+    width: 100%;
+    height: 1px;
+    background-color: hsla(260, 25%, 53%, .5);
+    border: none;
+    border-radius: 8px;
+    align-self: center;
+}
+
+.limitLinks{
+    font-weight: 400;
+    letter-spacing: -.036rem;
+    opacity: .5;
+}
+
+.limitLinks.strong{
+    opacity: 1;
+}
+
+.customField{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.customField > label{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-weight: 500;
+    width: 100%;
+    line-height: .95rem;
+    letter-spacing: -.013rem;
+    color: hsla(260, 0%, 20%, .9);
+}
+
+.customField > span{
+    padding: 2rem .5rem .5rem 1rem;
+    font-weight: bolder;
+}
+
+.domainDisabled{
+    composes: input;
+    opacity: .8;
+    border: none;
+    outline: none;
+    background-color: hsla(260, 23%, 63%, .1);
+}
+
+.formFooter{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    align-items: center;
+    width: 84%;
+    right: 0;
+    padding: .75rem;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid hsla(260, 0%, 53%, .2);
+    z-index: 100;
+}
+
+.primaryButtonLinks{
+    composes: primaryButton from '@/components/button.module.css';
+    border-radius: 4px;
+    width: fit-content;
+    padding: .75rem;
+}
+
+.primaryButtonLinksDark{
+    composes: primaryButtonLinks;
+    margin-top: 0;
+}
+
+.cancelButtonLinks{
+    border-radius: 4px;
+    margin-top: 0;
+    height: 100%;
+    composes: cancelButton from '@/components/button.module.css'
+    
+}
+
+.tooltip{
+    position: relative;
+    bottom: 1.5rem;
+    right: 1.75rem;
+    opacity: .7;
+}
