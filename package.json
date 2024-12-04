@@ -1,0 +1,15 @@
+{
+  "name": "nano-url",
+  "version": "1.0.0",
+  "description": "Monorepo para nano-url con backend y frontend",
+  "main": "index.js",
+  "scripts": {
+    "dev":"pnpm run --filter ./** dev"
+  },
+  "private": false,
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "pnpm": "^9.14.2"
+  }
+}
